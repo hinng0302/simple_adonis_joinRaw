@@ -16,3 +16,4 @@
 const Route = use('Route')
 
 Route.on('/').render('welcome')
+Route.get('/get_all_users/car/language/:language', 'SampleApiController.get_all').middleware('lang')
